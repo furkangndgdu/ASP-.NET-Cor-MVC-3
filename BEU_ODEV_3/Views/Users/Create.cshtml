@@ -1,0 +1,40 @@
+﻿@model Users
+<form method="post">
+     <div class="mb-3">
+        <label asp-for="Id"></label>
+        <input type="text" asp-for="Id" placeholder="id" class="form-control" />
+    </div>
+     <div class="mb-3">
+        <label asp-for="UserTypeId"></label>
+        <input type="text" asp-for="UserTypeId" placeholder="user type id" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name" placeholder="name" class="form-control" />
+    </div>
+     <div class="mb-3">
+        <label asp-for="SurName"></label>
+        <input type="text" asp-for="SurName" placeholder="surname" class="form-control" />
+    </div>
+     <div class="mb-3">
+        <label asp-for="Email"></label>
+        <input type="email" asp-for="Email" placeholder="email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password"></label>
+        <input type="password" asp-for="Password" placeholder="password" class="form-control" />
+    </div>
+ 
+      <div class="mb-3">
+        <label asp-for="IsActive"></label>
+        <input type="checkbox" asp-for="IsActive" class="form-check-input" />
+    </div>
+     <div class="mb-3">
+        <label asp-for="IsActive"></label>
+        <input type="checkbox" asp-for="IsActive" class="form-check-input" />
+    </div>
+            <div class="mb-3">
+        <input type="submit" value="Submit" class="btn btn-warning" />
+        <a asp-controller="Create" class="btn btn-secondary" asp-action="Index">Delete</a>
+    </div>
+</form>
